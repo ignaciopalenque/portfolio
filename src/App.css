@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+/*
+body{
+    background-image: url('../src/assets/img/bgb.png');
+
+}
+    */
+.bgDark{
+    position: absolute;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url('../src/assets/img/bgb.webp');
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+.bgLight{
+    position: absolute;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url('../src/assets/img/bgl.webp');
+    background-position: cover;
+    background-repeat: no-repeat;
+}   
