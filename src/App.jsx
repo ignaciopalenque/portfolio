@@ -35,7 +35,7 @@ function App() {
     <section>
       <AboutMe modOscuro={modOscuro}/>
       <Experience modOscuro={modOscuro}/>
-      <Skills></Skills>
+      <Skills modOscuro={modOscuro}/>
     </section>
 
     <footer></footer>
