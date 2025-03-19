@@ -1,13 +1,31 @@
 import React from 'react';
 import me  from '../../assets/img/me.webp'
+import styled from 'styled-components'
+
 const AboutMe = ({modOscuro}) => {
 
   let aboutMeClass = modOscuro ? ' text-amber-50 border-2 font-bold border-amber-50 bg-gray-800' : ' text-black-50 border-2 font-bold border-black-50 bg-amber-50'
   let imgClass = modOscuro ? 'border-2 border-amber-50' : 'border-2 border-black'
+
+  const SectionStyled = styled.section`
+  @media (max-width: 640px) {
+    max-width: calc(100% - 10px);
+    margin: 0 auto;
+  }
+  `
+
+
   return (
-    <section className={`mx-auto mt-16 flex flex-col items-center justify-center gap-4 max-w-2xl rounded-2xl p-4 ${aboutMeClass}`}>
-      <h1 className="font-extrabold text-3xl">Sobre mí</h1>
-      <section className="flex flex-row items-center justify-center gap-4">
+    <SectionStyled>
+    <section className={`mx-auto 
+      mt-24 
+      flex flex-col items-center justify-center gap-4
+      lg:max-w-4xl 
+      md:max-w-3xl
+      sm:max-w-2xl
+      rounded-2xl p-4 ${aboutMeClass}`}>
+      <h1 className="font-extrabold lg:text-3xl text-xl">Sobre mí</h1>
+      <section className="flex lg:flex-row flex-col items-center justify-center gap-4">
         <img className={`border-2 object-cover ${imgClass}`} src={me} width="200px" alt="" />
         <section className="flex flex-col items-center justify-center text-justify hyphens-auto leading-relaxed gap-4">
         <p>
@@ -26,6 +44,8 @@ const AboutMe = ({modOscuro}) => {
       </section>
     
     </section>
+    </SectionStyled>
+
   );
 }
 export default AboutMe;

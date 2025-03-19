@@ -11,13 +11,15 @@ const Navbar =({cambiarTema, modOscuro})=>{
     let btnGitClass = modOscuro ? ' hover:bg-amber-950 ' : 'hover:bg-red-400 '
     return(
     
-    <nav className={`fixed w-full top-0 z-50 opacity-80 left-0 px-6 py-6 flex flex-row gap-16 items-center justify-between font-semibold ${navbarClass}`}>
+    <nav className={`fixed w-screen top-0 z-50 opacity-80 left-0 px-6 py-6 
+    flex lg:flex-row flex-wrap sm:flex-col gap-16 
+    items-center justify-between font-semibold ${navbarClass}`}>
        
        <section className='flex flex-row gap-6 p-0'>
        <span>Portfolio Ignacio Palenque</span>
        </section>
 
-        <section className='flex flex-row gap-6'>
+        <section className='flex flex-row flex-wrap gap-6'>
 
         <span  className=' hover:text-green-200 hover:underline' >Sobre mí</span>
         <span  className=' hover:text-green-200 hover:underline'>Experiencia</span>
@@ -25,9 +27,21 @@ const Navbar =({cambiarTema, modOscuro})=>{
         <span  className=' hover:text-green-200 hover:underline'>Proyectos</span>
         <span  className=' hover:text-green-200 hover:underline'>Formación</span>
         <span  className=' hover:text-green-200 hover:underline'>Curriculum</span>
-        <a href='https://www.linkedin.com/in/ignacio-palenque-tronco-30a1aa206/' target="_blank" rel="noopener noreferrer"  className='hover:bg-blue-400 p-1 border-2 rounded-2xl'><Linkedin/></a>
-        <a href = 'https://github.com/nachopalenque' target="_blank" rel="noopener noreferrer"   className={`p-1 border-2 rounded-2xl ${btnGitClass}`} ><Github/></a>
+        <a href='https://www.linkedin.com/in/ignacio-palenque-tronco-30a1aa206/' 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        title='Ver perfil en Linkedin'
+        className='flex flex-row justify-center items-center w-8 
+         hover:bg-blue-400 p-0.5 border-2 rounded-2xl'><Linkedin/></a>
+
+
+        <a href = 'https://github.com/nachopalenque' 
+        target="_blank" 
+        rel="noopener noreferrer"  
+        title='Ver perfil en Github' 
+        className={`flex flex-row justify-center items-center w-8  p-0.5 border-2 rounded-2xl ${btnGitClass}`} ><Github/></a>
         <button 
+        title='Alternar entre el tema oscuro y el tema claro'
                 onClick={cambiarTema}
                 className={`w-18 p-0.5 flex flex-row justify-center items-center border-2 rounded-2xl hover:bg-emerald-300 ${btnModeClass}` }>
         {modOscuro ? (

@@ -1,10 +1,19 @@
 import React from 'react';
 import { Check }  from  'iconoir-react' 
 import { PlusSquare }  from  'iconoir-react' 
+import styled from 'styled-components'
 
 const Experience = ({modOscuro}) => {
 
   let experienceClass = modOscuro ? ' text-amber-50 border-2 font-bold border-amber-50 bg-gray-800' : ' text-black-50 border-2 font-bold border-black-50 bg-amber-50'
+  const SectionStyled = styled.section`
+  @media (max-width: 640px) {
+    max-width: calc(100% - 10px);
+    margin: 0 auto;
+  }
+  `
+
+
 
   function mostarOcultar(id){
     const padre = document.getElementById(id); // Obtiene el padre del botón
@@ -13,12 +22,18 @@ const Experience = ({modOscuro}) => {
   }
 
     return (
-      <section className={`mx-auto mt-16 flex flex-col items-center justify-center gap-4 max-w-2xl rounded-2xl p-4 ${experienceClass}`}>
-        <h1 className="font-extrabold text-3xl self-center">Experiencia laboral</h1>
+      <SectionStyled>
+      <section className={`mx-auto mt-24
+       flex flex-col items-center justify-center gap-4 
+       lg:max-w-4xl 
+       md:max-w-3xl
+       sm:max-w-2xl
+       rounded-2xl p-4 ${experienceClass}`}>
+        <h1 className="font-extrabold lg:text-3xl text-xl self-center">Experiencia laboral</h1>
        
         <article className="flex flex-col gap-4 w-full">
           {/* Título alineado al inicio */}
-          <span className="font-semibold text-2xl underline self-start">Infofive S.L - 4 años y 9 meses</span>
+          <span className="font-semibold lg:text-2xl text-xl underline self-start">Infofive S.L - 4 años y 9 meses</span>
           
           {/* Fechas alineadas al final */}
       <strong className="self-start">Desde Febrero del 2020</strong>
@@ -53,6 +68,8 @@ const Experience = ({modOscuro}) => {
           <strong className="self-start">Hasta Septiembre del 2024</strong>
         </article>
       </section>
+      </SectionStyled>
+
     );
   };
 export default Experience;
