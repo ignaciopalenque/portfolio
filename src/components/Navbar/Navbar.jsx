@@ -23,9 +23,9 @@ const Navbar =({cambiarTema, modOscuro})=>{
 
         <span  className=' hover:text-green-200 hover:underline' >Sobre mí</span>
         <span  className=' hover:text-green-200 hover:underline'>Experiencia</span>
+        <span  className=' hover:text-green-200 hover:underline'>Formación</span>
         <span  className=' hover:text-green-200 hover:underline'>Skils</span>
         <span  className=' hover:text-green-200 hover:underline'>Proyectos</span>
-        <span  className=' hover:text-green-200 hover:underline'>Formación</span>
         <span  className=' hover:text-green-200 hover:underline'>Curriculum</span>
         <a href='https://www.linkedin.com/in/ignacio-palenque-tronco-30a1aa206/' 
         target="_blank" 

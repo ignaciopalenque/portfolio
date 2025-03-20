@@ -5,6 +5,7 @@ import './App.css'
 import AboutMe from './components/Cards/AboutMe';
 import Experience from './components/Cards/Experience';
 import Skills from './components/Cards/Skills';
+import Education from './components/Cards/Education';
 function App() {
 
   const [modOscuro, setModOscuro] = useState(false)
@@ -35,10 +36,16 @@ function App() {
     <section>
       <AboutMe modOscuro={modOscuro}/>
       <Experience modOscuro={modOscuro}/>
+      <Education modOscuro={modOscuro}/>
       <Skills modOscuro={modOscuro}/>
     </section>
 
-    <footer></footer>
+    <footer
+    className={`mt-16 mb-2 text-center 
+      ${modOscuro
+      ? `text-white`
+      : `text-black`}`}
+    >Desarrollado en React con Tailwindcss utilizando Vite. All rights reserved.</footer>
 
   </main>
 

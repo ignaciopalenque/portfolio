@@ -10,7 +10,7 @@ body{
     position: absolute;
     min-height: 100vh;
     min-width: 100vw;
-    background-image: url('../src/assets/img/bgb.webp');
+    background-image: url('../src/assets/img/bgsb.webp');
     background-position: cover;
     background-repeat: no-repeat;
 }
@@ -18,7 +18,7 @@ body{
     position: absolute;
     min-height: 100vh;
     min-width: 100vw;
-    background-image: url('../src/assets/img/bgl.webp');
+    background-image: url('../src/assets/img/bgsw.webp');
     background-position: cover;
     background-repeat: no-repeat;
 }   
