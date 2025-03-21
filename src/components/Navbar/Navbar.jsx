@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Linkedin }  from  'iconoir-react' 
 import { Github }  from  'iconoir-react'  
 import { LightBulbOn }  from  'iconoir-react' 
@@ -13,7 +13,7 @@ const Navbar =({cambiarTema, modOscuro})=>{
     let navbarClass = modOscuro ? ' bg-gray-800 border-b-2  border-amber-50   text-amber-50' : 'bg-amber-50 border-b-2   border-b-black text-gray-800'
     let btnModeClass = modOscuro ? ' border-amber-50 bg-yellow-800' : 'border-black-50'
     let btnGitClass = modOscuro ? ' hover:bg-amber-950 ' : 'hover:bg-red-400 '
-    let hiddenMenu = false
+    const [menuVisible, setMenuVisible] = useState(true); // Estado para controlar la visibilidad del menú
 
     const SectionStyled = styled.section`
     @media (max-width: 640px) {
@@ -23,12 +23,20 @@ const Navbar =({cambiarTema, modOscuro})=>{
     visibility: visible;}
 
     #sectioNav{
-    display: none;
-    visibility:hidden; }
+        display: ${menuVisible ? 'flex' : 'none'};
+        visibility: ${menuVisible ? 'visible' : 'hidden'};
 
     }
 
-    `
+
+
+    `;
+
+    
+
+ /*
+
+
     const mostrarMenu = ()=>{
         hiddenMenu = !hiddenMenu;
 
@@ -40,6 +48,14 @@ const Navbar =({cambiarTema, modOscuro})=>{
             document.getElementById('sectioNav').style.display = 'none'
             document.getElementById('sectioNav').style.visibility = 'hidden'
         }
+    }
+
+
+ */
+
+    const mostrarMenu = ()=>{
+        setMenuVisible(!menuVisible);
+ 
     }
     
 
