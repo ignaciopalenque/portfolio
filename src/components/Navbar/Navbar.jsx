@@ -46,7 +46,7 @@ const Navbar =({cambiarTema, modOscuro})=>{
 
     return(
     <SectionStyled>
-    <nav className={`fixed w-full top-0 z-50 opacity-80 left-0 px-6 py-6 
+    <nav className={`fixed w-full top-0 z-50 opacity-95 left-0 px-6 py-6 
     flex lg:flex-row flex-wrap sm:flex-col gap-16 
     items-center justify-between font-semibold ${navbarClass}`}>
        
@@ -59,10 +59,19 @@ const Navbar =({cambiarTema, modOscuro})=>{
 
         <section id='sectioNav' className='flex flex-row flex-wrap gap-6'>
 
-        <span  className=' hover:text-green-200 hover:underline' >Sobre mí</span>
-        <span  className=' hover:text-green-200 hover:underline'>Experiencia</span>
-        <span  className=' hover:text-green-200 hover:underline'>Formación</span>
-        <span  className=' hover:text-green-200 hover:underline'>Skils</span>
+        <a href="#aboutMe">
+            <span  className=' hover:text-green-200 hover:underline' >Sobre mí</span>
+        </a>
+        <a href="#experience">        
+            <span  className=' hover:text-green-200 hover:underline'>Experiencia</span>
+        </a>
+        <a href="#education">
+            <span  className=' hover:text-green-200 hover:underline'>Formación</span>
+        </a>
+        
+        <a href="#skills">
+            <span  className=' hover:text-green-200 hover:underline'>Skills</span>
+        </a>
         <span  className=' hover:text-green-200 hover:underline'>Proyectos</span>
         <span  className=' hover:text-green-200 hover:underline'>Curriculum</span>
         <a href='https://www.linkedin.com/in/ignacio-palenque-tronco-30a1aa206/' 

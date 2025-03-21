@@ -17,12 +17,13 @@ const AboutMe = ({modOscuro}) => {
 
   return (
     <SectionStyled>
-    <section className={`mx-auto 
+    <section id='aboutMe' className={`mx-auto 
       mt-24 
       flex flex-col items-center justify-center gap-4
       lg:max-w-4xl 
       md:max-w-3xl
       sm:max-w-2xl
+      scroll-mt-24
       rounded-2xl p-4 ${aboutMeClass}`}>
       <h1 className="font-extrabold lg:text-3xl text-xl">Sobre mí</h1>
       <section className="flex lg:flex-row flex-col items-center justify-center gap-4">

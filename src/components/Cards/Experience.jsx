@@ -23,11 +23,12 @@ const Experience = ({modOscuro}) => {
 
     return (
       <SectionStyled>
-      <section className={`mx-auto mt-24
+      <section id='experience' className={`mx-auto mt-24
        flex flex-col items-center justify-center gap-4 
        lg:max-w-4xl 
        md:max-w-3xl
        sm:max-w-2xl
+       scroll-mt-24
        rounded-2xl p-4 ${experienceClass}`}>
         <h1 className="font-extrabold lg:text-3xl text-xl self-center">Experiencia laboral</h1>
        

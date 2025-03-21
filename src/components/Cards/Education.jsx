@@ -14,12 +14,13 @@ const Education = ({modOscuro}) => {
     `
     return (
         <SectionStyled>
-        <section className={`mx-auto 
+        <section id='education' className={`mx-auto 
         mt-24 
         flex flex-col items-start justify-items-start gap-4
         lg:max-w-4xl 
         md:max-w-3xl
         sm:max-w-2xl
+        scroll-mt-24
         rounded-2xl p-4 ${educationClass}`}>
              
             <h1 className="font-extrabold lg:text-3xl text-xl text-center self-center">Formación</h1>

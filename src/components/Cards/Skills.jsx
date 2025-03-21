@@ -36,12 +36,13 @@ const Skills = ({modOscuro}) =>{
 
         <SectionStyled>
         
-        <section className={`mx-auto mt-24 
+        <section id='skills' className={`mx-auto mt-24 
         flex flex-col items-center justify-center 
         gap-4 
         lg:max-w-4xl 
         md:max-w-3xl
         sm:max-w-2xl
+        scroll-mt-24
         rounded-2xl p-4 ${skillsClass}`}>
         
         <section className="flex flex-row items-center justify-center gap-4">
