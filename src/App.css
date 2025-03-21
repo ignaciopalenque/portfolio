@@ -13,6 +13,11 @@ body{
     background-image: url('../src/assets/img/bgsb.webp');
     background-position: cover;
     background-repeat: no-repeat;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    
+
 }
 .bgLight{
     position: absolute;
@@ -21,4 +26,8 @@ body{
     background-image: url('../src/assets/img/bgsw.webp');
     background-position: cover;
     background-repeat: no-repeat;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+
 }   

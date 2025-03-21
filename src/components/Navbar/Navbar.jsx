@@ -3,23 +3,61 @@ import { Linkedin }  from  'iconoir-react'
 import { Github }  from  'iconoir-react'  
 import { LightBulbOn }  from  'iconoir-react' 
 import { HalfMoon }  from  'iconoir-react' 
+import { Menu }  from  'iconoir-react' 
+import styled from 'styled-components'
+
+
 
 const Navbar =({cambiarTema, modOscuro})=>{
 
     let navbarClass = modOscuro ? ' bg-gray-800 border-b-2  border-amber-50   text-amber-50' : 'bg-amber-50 border-b-2   border-b-black text-gray-800'
     let btnModeClass = modOscuro ? ' border-amber-50 bg-yellow-800' : 'border-black-50'
     let btnGitClass = modOscuro ? ' hover:bg-amber-950 ' : 'hover:bg-red-400 '
-    return(
+    let hiddenMenu = false
+
+    const SectionStyled = styled.section`
+    @media (max-width: 640px) {
+
+    #btnMenu{
+    display: block;
+    visibility: visible;}
+
+    #sectioNav{
+    display: none;
+    visibility:hidden; }
+
+    }
+
+    `
+    const mostrarMenu = ()=>{
+        hiddenMenu = !hiddenMenu;
+
+        if(hiddenMenu){
+            document.getElementById('sectioNav').style.display = 'flex'
+            document.getElementById('sectioNav').className = 'flex flex-row flex-wrap gap-6'
+            document.getElementById('sectioNav').style.visibility = 'visible'
+        }else{
+            document.getElementById('sectioNav').style.display = 'none'
+            document.getElementById('sectioNav').style.visibility = 'hidden'
+        }
+    }
     
-    <nav className={`fixed w-screen top-0 z-50 opacity-80 left-0 px-6 py-6 
+
+
+    return(
+    <SectionStyled>
+    <nav className={`fixed w-full top-0 z-50 opacity-80 left-0 px-6 py-6 
     flex lg:flex-row flex-wrap sm:flex-col gap-16 
     items-center justify-between font-semibold ${navbarClass}`}>
        
        <section className='flex flex-row gap-6 p-0'>
+        <button id='btnMenu' onClick={mostrarMenu} className='hidden'>
+        <Menu/>
+        </button>
        <span>Portfolio Ignacio Palenque</span>
        </section>
 
-        <section className='flex flex-row flex-wrap gap-6'>
+        <section id='sectioNav' className='flex flex-row flex-wrap gap-6'>
 
         <span  className=' hover:text-green-200 hover:underline' >Sobre mí</span>
         <span  className=' hover:text-green-200 hover:underline'>Experiencia</span>
@@ -60,7 +98,7 @@ const Navbar =({cambiarTema, modOscuro})=>{
         </section>
 
     </nav>
-
+    </SectionStyled>
 )
 
 }
