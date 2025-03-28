@@ -63,7 +63,9 @@ const Skills = ({modOscuro}) =>{
             rel="noopener noreferrer" 
             title='Ver más sobre Visual Basic .NET'
             className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
-            <DotNetPlainWordmark size='100' />
+            <DotNetPlainWordmark 
+            className="transition-transform duration-300 hover:scale-110" 
+            size='100' />
             </a>
             </article>
 
@@ -75,7 +77,9 @@ const Skills = ({modOscuro}) =>{
             rel="noopener noreferrer" 
             title='Ver más sobre C#'
             className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
-            <CsharpOriginal size='100' />
+            <CsharpOriginal 
+            className="transition-transform duration-300 hover:scale-110" 
+            size='100' />
             </a>
             </article>
 
@@ -87,7 +91,9 @@ const Skills = ({modOscuro}) =>{
             rel="noopener noreferrer" 
             title='Ver más sobre Blazor'
             className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
-            <BlazorOriginal size='100' />
+            <BlazorOriginal 
+            className="transition-transform duration-300 hover:scale-110" 
+            size='100' />
             </a>
             </article>
 
@@ -100,7 +106,9 @@ const Skills = ({modOscuro}) =>{
             rel="noopener noreferrer" 
             title='Ver más sobre Spring Boot'
             className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
-            <SpringOriginalWordmark  size='100' />
+            <SpringOriginalWordmark  
+            className="transition-transform duration-300 hover:scale-110" 
+            size='100' />
             </a>
             </article>
 
@@ -114,7 +122,9 @@ const Skills = ({modOscuro}) =>{
             rel="noopener noreferrer"
             title='Ver más sobre PHP' 
             className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
-            <PhpOriginal  size='100' />
+            <PhpOriginal 
+            className="transition-transform duration-300 hover:scale-110" 
+            size='100' />
             </a>
             </article>
 
@@ -127,7 +137,9 @@ const Skills = ({modOscuro}) =>{
             rel="noopener noreferrer"
             title='Ver más sobre Javascript' 
             className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
-            <JavascriptOriginal  size='100' />
+            <JavascriptOriginal  
+            className="transition-transform duration-300 hover:scale-110" 
+            size='100' />
             </a>
             </article>
 
@@ -140,7 +152,9 @@ const Skills = ({modOscuro}) =>{
             rel="noopener noreferrer"
             title='Ver más sobre React' 
             className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
-            <ReactOriginal  size='100' />
+            <ReactOriginal  
+            className="transition-transform duration-300 hover:scale-110" 
+            size='100' />
             </a>
             </article>
 
@@ -154,7 +168,9 @@ const Skills = ({modOscuro}) =>{
             rel="noopener noreferrer"
             title='Ver más sobre NodeJs'
             className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
-            <NodejsPlainWordmark  size='100' />
+            <NodejsPlainWordmark  
+            className="transition-transform duration-300 hover:scale-110" 
+            size='100' />
             </a>
             </article>
 
@@ -169,8 +185,10 @@ const Skills = ({modOscuro}) =>{
              rel="noopener noreferrer"
              title='Ver más sobre Laravel'
              className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
-            <LaravelOriginalWordmark  size='100' />
-            </a>
+            <LaravelOriginalWordmark 
+             className="transition-transform duration-300 hover:scale-110" 
+             size="100" />           
+             </a>
             </article>
 
 
@@ -182,7 +200,9 @@ const Skills = ({modOscuro}) =>{
             rel="noopener noreferrer"
             title='Ver más sobre HTML' 
             className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
-            <Html5Original  size='100' />
+            <Html5Original  
+            className="transition-transform duration-300 hover:scale-110" 
+            size='100' />
             </a>
             </article>
 
@@ -195,7 +215,9 @@ const Skills = ({modOscuro}) =>{
             rel="noopener noreferrer" 
             title='Ver más sobre CSS'
             className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
-            <Css3Original  size='100' />
+            <Css3Original  
+            className="transition-transform duration-300 hover:scale-110" 
+            size='100' />
             </a>
             </article>
 
@@ -209,7 +231,9 @@ const Skills = ({modOscuro}) =>{
             rel="noopener noreferrer"
             title='Ver más sobre Bootstrap' 
             className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
-            <BootstrapOriginal  size='100' />
+            <BootstrapOriginal  
+            className="transition-transform duration-300 hover:scale-110" 
+            size='100' />
             </a>
             </article>
 
@@ -222,7 +246,9 @@ const Skills = ({modOscuro}) =>{
             rel="noopener noreferrer"
             title='Ver más sobre Tailwindcss' 
             className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
-            <TailwindcssOriginal  size='100' />
+            <TailwindcssOriginal  
+            className="transition-transform duration-300 hover:scale-110" 
+            size='100' />
             </a>
             </article>
 
@@ -234,7 +260,9 @@ const Skills = ({modOscuro}) =>{
              rel="noopener noreferrer"
              title='Ver más sobre Microsoft SQL Server' 
              className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
-            <MicrosoftsqlserverOriginal  size='100' />
+            <MicrosoftsqlserverOriginal  
+            className="transition-transform duration-300 hover:scale-110" 
+            size='100' />
             </a>
             </article>
 
@@ -247,7 +275,9 @@ const Skills = ({modOscuro}) =>{
              rel="noopener noreferrer"
              title='Ver más sobre Mysql' 
              className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
-            <MysqlOriginalWordmark  size='100' />
+            <MysqlOriginalWordmark  
+            className="transition-transform duration-300 hover:scale-110" 
+            size='100' />
             </a>
             </article>
 
@@ -260,7 +290,9 @@ const Skills = ({modOscuro}) =>{
              rel="noopener noreferrer"
              title='Ver más sobre MariaDB'
              className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
-            <MariadbOriginalWordmark  size='100' />
+            <MariadbOriginalWordmark  
+            className="transition-transform duration-300 hover:scale-110" 
+            size='100' />
             </a>
             </article>
 
@@ -272,7 +304,9 @@ const Skills = ({modOscuro}) =>{
              rel="noopener noreferrer"
              title='Ver más sobre MongoDB' 
              className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
-            <MongodbOriginal  size='100' />
+            <MongodbOriginal  
+            className="transition-transform duration-300 hover:scale-110" 
+            size='100' />
             </a>
             </article>
 
@@ -284,7 +318,9 @@ const Skills = ({modOscuro}) =>{
             rel="noopener noreferrer"
             title='Ver más sobre Apache' 
             className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
-            <ApacheOriginalWordmark  size='100' />
+            <ApacheOriginalWordmark  
+            className="transition-transform duration-300 hover:scale-110" 
+            size='100' />
             </a>
             </article>
 
@@ -298,7 +334,9 @@ const Skills = ({modOscuro}) =>{
             rel="noopener noreferrer"
             title='Ver más sobre Docker' 
             className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
-            <DockerOriginal  size='100' />
+            <DockerOriginal  
+            className="transition-transform duration-300 hover:scale-110" 
+            size='100' />
             </a>
             </article>
 

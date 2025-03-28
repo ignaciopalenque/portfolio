@@ -78,42 +78,94 @@ const Navbar =({cambiarTema, modOscuro})=>{
 
         <section id='sectioNav' className='flex flex-row flex-wrap gap-6'>
 
-        <a href="#aboutMe">
-            <span  className=' hover:text-green-200 hover:underline' >Sobre mí</span>
+        <a href="#aboutMe" className='transition-transform duration-300 hover:scale-110'>
+            <span  className='
+          hover:text-green-200 
+            hover:underline'>
+            Sobre mí
+            </span>
         </a>
-        <a href="#experience">        
-            <span  className=' hover:text-green-200 hover:underline'>Experiencia</span>
+        <a href="#experience" className='transition-transform duration-300 hover:scale-110'>        
+            <span  className='
+             hover:text-green-200 
+             hover:underline'>
+             Experiencia
+             </span>
         </a>
-        <a href="#education">
-            <span  className=' hover:text-green-200 hover:underline'>Formación</span>
+        <a href="#education" className='transition-transform duration-300 hover:scale-110'>
+            <span  className='
+             hover:text-green-200
+              hover:underline'>
+              Formación
+            </span>
         </a>
         
-        <a href="#skills">
-            <span  className=' hover:text-green-200 hover:underline'>Skills</span>
+        <a href="#skills" className='transition-transform duration-300 hover:scale-110'>
+            <span  className='
+             hover:text-green-200 
+             hover:underline'>
+             Skills
+             </span>
         </a>
-        <span  className=' hover:text-green-200 hover:underline'>Proyectos</span>
-        <span  className=' hover:text-green-200 hover:underline'>Curriculum</span>
+
+
+        <span  className='
+         hover:text-green-200 
+         hover:underline
+         transition-transform duration-300 hover:scale-110 '>
+         Proyectos
+         </span>
+       
+        <span  className='
+      hover:text-green-200 
+        hover:underline
+        transition-transform duration-300 hover:scale-110 '>
+        Curriculum
+        </span>
+
         <a href='https://www.linkedin.com/in/ignacio-palenque-tronco-30a1aa206/' 
         target="_blank" 
         rel="noopener noreferrer" 
         title='Ver perfil en Linkedin'
-        className='flex flex-row justify-center items-center w-8 
-         hover:bg-blue-400 p-0.5 border-2 rounded-2xl'><Linkedin/></a>
+        className='flex 
+        flex-row 
+        justify-center items-center 
+        w-8
+        transition-transform duration-300 hover:scale-110 
+      hover:bg-blue-400 
+        p-0.5 
+        border-2 rounded-2xl'>
+        <Linkedin/>
+        </a>
 
 
         <a href = 'https://github.com/nachopalenque' 
         target="_blank" 
         rel="noopener noreferrer"  
         title='Ver perfil en Github' 
-        className={`flex flex-row justify-center items-center w-8  p-0.5 border-2 rounded-2xl ${btnGitClass}`} >
+        className={`flex 
+        flex-row 
+        justify-center items-center 
+        w-8  
+        p-0.5 
+        border-2 rounded-2xl 
+        transition-transform duration-300 hover:scale-110 
+        ${btnGitClass}`} >
         <Github/>
         </a>
        
         <a href = 'mailto:ignpalentr@tutamail.com"' 
         target="_blank" 
         rel="noopener noreferrer"  
-        title='Ver perfil en Github' 
-        className={`flex flex-row justify-center items-center w-8  p-0.5 border-2 rounded-2xl ${btnMailClass}`} >
+        title='Contactame por correo' 
+        className={`flex 
+        flex-row justify-center items-center 
+        w-8  
+        p-0.5 
+        border-2 rounded-2xl 
+        transition-transform duration-300 hover:scale-110 
+
+        ${btnMailClass}`} >
         <Mail/>
         </a>
        
