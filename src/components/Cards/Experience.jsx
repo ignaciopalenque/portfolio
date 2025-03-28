@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 const Experience = ({modOscuro}) => {
 
-  let experienceClass = modOscuro ? ' text-amber-50 border-2 font-bold border-amber-50 bg-gray-800' : ' text-black-50 border-2 font-bold border-black-50 bg-amber-50'
+  let experienceClass = modOscuro ? ' text-amber-50 border-2 font-bold border-green-200 shadow-[0_0_10px_2px_rgba(255,255,255,0.5)] bg-gray-800' : ' text-black-50 border-2 font-bold border-green-200 shadow-[0_0_10px_2px_rgba(0,0,0,0.3)] bg-amber-50'
   const SectionStyled = styled.section`
   @media (max-width: 640px) {
     max-width: calc(100% - 10px);

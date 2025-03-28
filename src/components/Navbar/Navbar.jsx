@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import { Linkedin }  from  'iconoir-react' 
+import { Mail }  from  'iconoir-react' 
+
 import { Github }  from  'iconoir-react'  
 import { LightBulbOn }  from  'iconoir-react' 
 import { HalfMoon }  from  'iconoir-react' 
@@ -13,8 +15,9 @@ const Navbar =({cambiarTema, modOscuro})=>{
     let navbarClass = modOscuro ? ' bg-gray-800 border-b-2  border-amber-50   text-amber-50' : 'bg-amber-50 border-b-2   border-b-black text-gray-800'
     let btnModeClass = modOscuro ? ' border-amber-50 bg-yellow-800' : 'border-black-50'
     let btnGitClass = modOscuro ? ' hover:bg-amber-950 ' : 'hover:bg-red-400 '
-    const [menuVisible, setMenuVisible] = useState(true); // Estado para controlar la visibilidad del menú
+    let btnMailClass = modOscuro ? ' hover:bg-yellow-400 ' : 'hover:bg-yellow-400 '
 
+    const [menuVisible, setMenuVisible] = useState(true); // Estado para controlar la visibilidad del menú
     const SectionStyled = styled.section`
     @media (max-width: 640px) {
 
@@ -102,7 +105,18 @@ const Navbar =({cambiarTema, modOscuro})=>{
         target="_blank" 
         rel="noopener noreferrer"  
         title='Ver perfil en Github' 
-        className={`flex flex-row justify-center items-center w-8  p-0.5 border-2 rounded-2xl ${btnGitClass}`} ><Github/></a>
+        className={`flex flex-row justify-center items-center w-8  p-0.5 border-2 rounded-2xl ${btnGitClass}`} >
+        <Github/>
+        </a>
+       
+        <a href = 'mailto:ignpalentr@tutamail.com"' 
+        target="_blank" 
+        rel="noopener noreferrer"  
+        title='Ver perfil en Github' 
+        className={`flex flex-row justify-center items-center w-8  p-0.5 border-2 rounded-2xl ${btnMailClass}`} >
+        <Mail/>
+        </a>
+       
         <button 
         title='Alternar entre el tema oscuro y el tema claro'
                 onClick={cambiarTema}

@@ -4,8 +4,8 @@ import styled from 'styled-components'
 
 const AboutMe = ({modOscuro}) => {
 
-  let aboutMeClass = modOscuro ? ' text-amber-50 border-2 font-bold border-amber-50 bg-gray-800' : ' text-black-50 border-2 font-bold border-black-50 bg-amber-50'
-  let imgClass = modOscuro ? 'border-2 border-amber-50' : 'border-2 border-black'
+  let aboutMeClass = modOscuro ? ' text-amber-50 border-2 font-bold border-green-200 shadow-[0_0_10px_2px_rgba(255,255,255,0.5)] bg-gray-800' : ' text-black-50 border-2 font-bold border-green-200 shadow-[0_0_10px_2px_rgba(0,0,0,0.3)] bg-amber-50'
+  let imgClass = modOscuro ? 'border-2 border-amber-50 shadow-[0_0_10px_2px_rgba(255,255,255,0.5)]' : 'border-2 border-green-200 shadow-[0_0_10px_2px_rgba(0,0,0,0.3)]'
 
   const SectionStyled = styled.section`
   @media (max-width: 640px) {

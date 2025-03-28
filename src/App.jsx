@@ -8,7 +8,8 @@ import Skills from './components/Cards/Skills';
 import Education from './components/Cards/Education';
 function App() {
 
-  const [modOscuro, setModOscuro] = useState(false)
+  //useState true por defecto sera modo oscuro
+  const [modOscuro, setModOscuro] = useState(true)
   
   const cambiarTema = () => {
     console.log('Estado actual:', modOscuro); // Verifica el estado antes de cambiarlo

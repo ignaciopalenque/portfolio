@@ -23,7 +23,9 @@ import styled from 'styled-components'
 
 const Skills = ({modOscuro}) =>{
 
-   let skillsClass = modOscuro ? '  text-amber-50 border-2 font-bold border-amber-50 bg-gray-800' : ' text-black-50 border-2 font-bold border-black-50 bg-amber-50'
+   let skillsClass =modOscuro ? ' text-amber-50 border-2 font-bold border-green-200 shadow-[0_0_10px_2px_rgba(255,255,255,0.5)] bg-gray-800' : ' text-black-50 border-2 font-bold border-green-200 shadow-[0_0_10px_2px_rgba(0,0,0,0.3)] bg-amber-50'
+   let skillsClasShadow = modOscuro ? 'hover:shadow-[0_0_10px_2px_rgba(255,255,255,0.5)]' : 'hover:shadow-[0_0_10px_2px_rgba(0,0,0,0.3)]'
+   
    const SectionStyled = styled.section`
    @media (max-width: 640px) {
      max-width: calc(100% - 10px);
@@ -60,7 +62,7 @@ const Skills = ({modOscuro}) =>{
             target="_blank" 
             rel="noopener noreferrer" 
             title='Ver más sobre Visual Basic .NET'
-            className='p-4 hover:hover:border-2 rounded-2xl border-green-200 '>
+            className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
             <DotNetPlainWordmark size='100' />
             </a>
             </article>
@@ -72,7 +74,7 @@ const Skills = ({modOscuro}) =>{
             target="_blank" 
             rel="noopener noreferrer" 
             title='Ver más sobre C#'
-            className='p-4 hover:hover:border-2 rounded-2xl border-green-200'>
+            className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
             <CsharpOriginal size='100' />
             </a>
             </article>
@@ -84,7 +86,7 @@ const Skills = ({modOscuro}) =>{
             target="_blank" 
             rel="noopener noreferrer" 
             title='Ver más sobre Blazor'
-            className='p-4 hover:hover:border-2 rounded-2xl border-green-200'>
+            className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
             <BlazorOriginal size='100' />
             </a>
             </article>
@@ -97,7 +99,7 @@ const Skills = ({modOscuro}) =>{
             target="_blank" 
             rel="noopener noreferrer" 
             title='Ver más sobre Spring Boot'
-            className='p-4 hover:hover:border-2 rounded-2xl border-green-200'>
+            className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
             <SpringOriginalWordmark  size='100' />
             </a>
             </article>
@@ -111,7 +113,7 @@ const Skills = ({modOscuro}) =>{
             target="_blank" 
             rel="noopener noreferrer"
             title='Ver más sobre PHP' 
-            className='p-4 hover:hover:border-2 rounded-2xl border-green-200'>
+            className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
             <PhpOriginal  size='100' />
             </a>
             </article>
@@ -124,7 +126,7 @@ const Skills = ({modOscuro}) =>{
             target="_blank" 
             rel="noopener noreferrer"
             title='Ver más sobre Javascript' 
-            className=' p-4 hover:border-2 rounded-2xl border-green-200'>
+            className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
             <JavascriptOriginal  size='100' />
             </a>
             </article>
@@ -137,7 +139,7 @@ const Skills = ({modOscuro}) =>{
             target="_blank" 
             rel="noopener noreferrer"
             title='Ver más sobre React' 
-            className=' p-4 hover:border-2 rounded-2xl border-green-200'>
+            className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
             <ReactOriginal  size='100' />
             </a>
             </article>
@@ -151,7 +153,7 @@ const Skills = ({modOscuro}) =>{
             target="_blank" 
             rel="noopener noreferrer"
             title='Ver más sobre NodeJs'
-            className='p-4 hover:border-2 rounded-2xl border-green-200'>
+            className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
             <NodejsPlainWordmark  size='100' />
             </a>
             </article>
@@ -166,7 +168,7 @@ const Skills = ({modOscuro}) =>{
              target="_blank" 
              rel="noopener noreferrer"
              title='Ver más sobre Laravel'
-             className=' p-4 hover:border-2 rounded-2xl border-green-200'>
+             className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
             <LaravelOriginalWordmark  size='100' />
             </a>
             </article>
@@ -179,7 +181,7 @@ const Skills = ({modOscuro}) =>{
             target="_blank" 
             rel="noopener noreferrer"
             title='Ver más sobre HTML' 
-            className=' p-4 hover:border-2 rounded-2xl border-green-200'>
+            className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
             <Html5Original  size='100' />
             </a>
             </article>
@@ -192,7 +194,7 @@ const Skills = ({modOscuro}) =>{
             target="_blank" 
             rel="noopener noreferrer" 
             title='Ver más sobre CSS'
-            className=' p-4 hover:border-2 rounded-2xl border-green-200'>
+            className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
             <Css3Original  size='100' />
             </a>
             </article>
@@ -206,7 +208,7 @@ const Skills = ({modOscuro}) =>{
             target="_blank" 
             rel="noopener noreferrer"
             title='Ver más sobre Bootstrap' 
-            className=' p-4 hover:border-2 rounded-2xl border-green-200'>
+            className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
             <BootstrapOriginal  size='100' />
             </a>
             </article>
@@ -219,7 +221,7 @@ const Skills = ({modOscuro}) =>{
             target="_blank" 
             rel="noopener noreferrer"
             title='Ver más sobre Tailwindcss' 
-            className=' p-4 hover:border-2 rounded-2xl border-green-200'>
+            className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
             <TailwindcssOriginal  size='100' />
             </a>
             </article>
@@ -231,7 +233,7 @@ const Skills = ({modOscuro}) =>{
              target="_blank" 
              rel="noopener noreferrer"
              title='Ver más sobre Microsoft SQL Server' 
-             className=' p-4 hover:border-2 rounded-2xl border-green-200'>
+             className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
             <MicrosoftsqlserverOriginal  size='100' />
             </a>
             </article>
@@ -244,7 +246,7 @@ const Skills = ({modOscuro}) =>{
              target="_blank" 
              rel="noopener noreferrer"
              title='Ver más sobre Mysql' 
-             className=' p-4 hover:border-2 rounded-2xl border-green-200'>
+             className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
             <MysqlOriginalWordmark  size='100' />
             </a>
             </article>
@@ -257,7 +259,7 @@ const Skills = ({modOscuro}) =>{
              target="_blank" 
              rel="noopener noreferrer"
              title='Ver más sobre MariaDB'
-             className=' p-4 hover:border-2 rounded-2xl border-green-200'>
+             className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
             <MariadbOriginalWordmark  size='100' />
             </a>
             </article>
@@ -269,7 +271,7 @@ const Skills = ({modOscuro}) =>{
              target="_blank" 
              rel="noopener noreferrer"
              title='Ver más sobre MongoDB' 
-            className=' p-4 hover:border-2 rounded-2xl border-green-200'>
+             className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
             <MongodbOriginal  size='100' />
             </a>
             </article>
@@ -281,7 +283,7 @@ const Skills = ({modOscuro}) =>{
             target="_blank" 
             rel="noopener noreferrer"
             title='Ver más sobre Apache' 
-            className=' p-4 hover:border-2 rounded-2xl border-green-200'>
+            className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
             <ApacheOriginalWordmark  size='100' />
             </a>
             </article>
@@ -295,7 +297,7 @@ const Skills = ({modOscuro}) =>{
             target="_blank" 
             rel="noopener noreferrer"
             title='Ver más sobre Docker' 
-            className=' p-4 hover:border-2 rounded-2xl border-green-200'>
+            className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
             <DockerOriginal  size='100' />
             </a>
             </article>
