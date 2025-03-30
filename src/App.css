@@ -10,10 +10,11 @@ body{
     position: absolute;
     min-height: 100vh;
     min-width: 100vw;
-    background-color: black;
+    background-color: #111827;
     /*
     background-image: url('../src/assets/img/bgsb.webp');
     */
+    
     background-position: cover;
     background-repeat: no-repeat;
     overflow-x: hidden;
