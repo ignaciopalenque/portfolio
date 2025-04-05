@@ -6,7 +6,7 @@ const AboutMe = ({modOscuro}) => {
 
   let aboutMeClass = modOscuro ? ' text-amber-50 border-2 font-bold border-green-200 shadow-[0_0_10px_2px_rgba(255,255,255,0.5)] bg-gray-800' : ' text-black-50 border-2 font-bold border-green-200 shadow-[0_0_10px_2px_rgba(0,0,0,0.3)] bg-amber-50'
   let imgClass = modOscuro ? 'border-2 border-amber-50 shadow-[0_0_10px_2px_rgba(255,255,255,0.5)]' : 'border-2 border-green-200 shadow-[0_0_10px_2px_rgba(0,0,0,0.3)]'
-
+  const maleWavingEmoji = '\u{1F64B}\u200D\u2642\uFE0F'; // Hombre saludando
   const SectionStyled = styled.section`
   @media (max-width: 640px) {
     max-width: calc(100% - 10px);
@@ -25,7 +25,7 @@ const AboutMe = ({modOscuro}) => {
       sm:max-w-2xl
       scroll-mt-24
       rounded-2xl p-4 ${aboutMeClass}`}>
-      <h1 className="font-extrabold lg:text-3xl text-xl">Sobre mí</h1>
+      <h1 className="font-extrabold lg:text-3xl text-xl">Sobre mí {maleWavingEmoji}</h1>
       <section className="flex lg:flex-row flex-col items-center justify-center gap-4">
         <img className={`border-2 object-cover ${imgClass}`} src={me} width="200px" alt="" />
         <section className="flex flex-col items-center justify-center text-justify hyphens-auto leading-relaxed gap-4">

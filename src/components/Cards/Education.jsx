@@ -6,6 +6,7 @@ import { faGraduationCap } from '@fortawesome/free-solid-svg-icons'
 const Education = ({modOscuro}) => { 
     let educationClass = modOscuro ? ' text-amber-50 border-2 font-bold border-green-200 shadow-[0_0_10px_2px_rgba(255,255,255,0.5)] bg-gray-800' : ' text-black-50 border-2 font-bold border-green-200 shadow-[0_0_10px_2px_rgba(0,0,0,0.3)] bg-amber-50'
     let iconClass = modOscuro ? 'text-amber-50' : 'text-black'
+    const maleStudentEmoji = '\u{1F468}\u200D\u{1F393}'; // Hombre estudiante
     const SectionStyled = styled.section`
     @media (max-width: 640px) {
         max-width: calc(100% - 10px);
@@ -23,7 +24,7 @@ const Education = ({modOscuro}) => {
         scroll-mt-24
         rounded-2xl p-4 ${educationClass}`}>
              
-            <h1 className="font-extrabold lg:text-3xl text-xl text-center self-center">Formación</h1>
+            <h1 className="font-extrabold lg:text-3xl text-xl text-center self-center">Formación {maleStudentEmoji}</h1>
                 
             <article className='flex flex-row items-start justify-items-start gap-8'>
 

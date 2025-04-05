@@ -25,7 +25,8 @@ const Skills = ({modOscuro}) =>{
 
    let skillsClass =modOscuro ? ' text-amber-50 border-2 font-bold border-green-200 shadow-[0_0_10px_2px_rgba(255,255,255,0.5)] bg-gray-800' : ' text-black-50 border-2 font-bold border-green-200 shadow-[0_0_10px_2px_rgba(0,0,0,0.3)] bg-amber-50'
    let skillsClasShadow = modOscuro ? 'hover:shadow-[0_0_10px_2px_rgba(255,255,255,0.5)]' : 'hover:shadow-[0_0_10px_2px_rgba(0,0,0,0.3)]'
-   
+   const rocketEmoji = '\u{1F680}'; // Cohete
+
    const SectionStyled = styled.section`
    @media (max-width: 640px) {
      max-width: calc(100% - 10px);
@@ -49,7 +50,7 @@ const Skills = ({modOscuro}) =>{
         
         <section className="flex flex-row items-center justify-center gap-4">
 
-        <h1 className="font-extrabold lg:text-3xl text-xl">Skills</h1>
+        <h1 className="font-extrabold lg:text-3xl text-xl">Skills {rocketEmoji}</h1>
 
         </section>
         

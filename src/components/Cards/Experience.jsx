@@ -6,6 +6,8 @@ import styled from 'styled-components'
 const Experience = ({modOscuro}) => {
 
   let experienceClass = modOscuro ? ' text-amber-50 border-2 font-bold border-green-200 shadow-[0_0_10px_2px_rgba(255,255,255,0.5)] bg-gray-800' : ' text-black-50 border-2 font-bold border-green-200 shadow-[0_0_10px_2px_rgba(0,0,0,0.3)] bg-amber-50'
+    const programmerEmoji = '\u{1F468}\u200D\u{1F4BB}'; // Hombre programador
+  
   const SectionStyled = styled.section`
   @media (max-width: 640px) {
     max-width: calc(100% - 10px);
@@ -30,7 +32,7 @@ const Experience = ({modOscuro}) => {
        sm:max-w-2xl
        scroll-mt-24
        rounded-2xl p-4 ${experienceClass}`}>
-        <h1 className="font-extrabold lg:text-3xl text-xl self-center">Experiencia laboral</h1>
+        <h1 className="font-extrabold lg:text-3xl text-xl self-center">Experiencia laboral {programmerEmoji}</h1>
        
         <article className="flex flex-col gap-4 w-full">
           {/* Título alineado al inicio */}
