@@ -62,7 +62,7 @@ const Skills = ({modOscuro}) =>{
             target="_blank" 
             rel="noopener noreferrer" 
             title='Ver más sobre Visual Basic .NET'
-            className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
+            className={`p-4 hover:outline-2 rounded-2xl outline-green-200 ${skillsClasShadow}`}>
             <DotNetPlainWordmark 
             className="transition-transform duration-300 hover:scale-110" 
             size='100' />
@@ -76,7 +76,7 @@ const Skills = ({modOscuro}) =>{
             target="_blank" 
             rel="noopener noreferrer" 
             title='Ver más sobre C#'
-            className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
+            className={`p-4 hover:outline-2 rounded-2xl outline-green-200 ${skillsClasShadow}`}>
             <CsharpOriginal 
             className="transition-transform duration-300 hover:scale-110" 
             size='100' />
@@ -90,7 +90,7 @@ const Skills = ({modOscuro}) =>{
             target="_blank" 
             rel="noopener noreferrer" 
             title='Ver más sobre Blazor'
-            className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
+            className={`p-4 hover:outline-2 rounded-2xl outline-green-200 ${skillsClasShadow}`}>
             <BlazorOriginal 
             className="transition-transform duration-300 hover:scale-110" 
             size='100' />
@@ -105,7 +105,7 @@ const Skills = ({modOscuro}) =>{
             target="_blank" 
             rel="noopener noreferrer" 
             title='Ver más sobre Spring Boot'
-            className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
+            className={`p-4 hover:outline-2 rounded-2xl outline-green-200 ${skillsClasShadow}`}>
             <SpringOriginalWordmark  
             className="transition-transform duration-300 hover:scale-110" 
             size='100' />
@@ -121,7 +121,7 @@ const Skills = ({modOscuro}) =>{
             target="_blank" 
             rel="noopener noreferrer"
             title='Ver más sobre PHP' 
-            className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
+            className={`p-4 hover:outline-2 rounded-2xl outline-green-200 ${skillsClasShadow}`}>
             <PhpOriginal 
             className="transition-transform duration-300 hover:scale-110" 
             size='100' />
@@ -136,7 +136,7 @@ const Skills = ({modOscuro}) =>{
             target="_blank" 
             rel="noopener noreferrer"
             title='Ver más sobre Javascript' 
-            className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
+            className={`p-4 hover:outline-2 rounded-2xl outline-green-200 ${skillsClasShadow}`}>
             <JavascriptOriginal  
             className="transition-transform duration-300 hover:scale-110" 
             size='100' />
@@ -151,7 +151,7 @@ const Skills = ({modOscuro}) =>{
             target="_blank" 
             rel="noopener noreferrer"
             title='Ver más sobre React' 
-            className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
+            className={`p-4 hover:outline-2 rounded-2xl outline-green-200 ${skillsClasShadow}`}>
             <ReactOriginal  
             className="transition-transform duration-300 hover:scale-110" 
             size='100' />
@@ -167,7 +167,7 @@ const Skills = ({modOscuro}) =>{
             target="_blank" 
             rel="noopener noreferrer"
             title='Ver más sobre NodeJs'
-            className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
+            className={`p-4 hover:outline-2 rounded-2xl outline-green-200 ${skillsClasShadow}`}>
             <NodejsPlainWordmark  
             className="transition-transform duration-300 hover:scale-110" 
             size='100' />
@@ -184,7 +184,7 @@ const Skills = ({modOscuro}) =>{
              target="_blank" 
              rel="noopener noreferrer"
              title='Ver más sobre Laravel'
-             className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
+             className={`p-4 hover:outline-2 rounded-2xl outline-green-200 ${skillsClasShadow}`}>
             <LaravelOriginalWordmark 
              className="transition-transform duration-300 hover:scale-110" 
              size="100" />           
@@ -199,7 +199,7 @@ const Skills = ({modOscuro}) =>{
             target="_blank" 
             rel="noopener noreferrer"
             title='Ver más sobre HTML' 
-            className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
+            className={`p-4 hover:outline-2 rounded-2xl outline-green-200 ${skillsClasShadow}`}>
             <Html5Original  
             className="transition-transform duration-300 hover:scale-110" 
             size='100' />
@@ -214,7 +214,7 @@ const Skills = ({modOscuro}) =>{
             target="_blank" 
             rel="noopener noreferrer" 
             title='Ver más sobre CSS'
-            className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
+            className={`p-4 hover:outline-2 rounded-2xl outline-green-200 ${skillsClasShadow}`}>
             <Css3Original  
             className="transition-transform duration-300 hover:scale-110" 
             size='100' />
@@ -230,7 +230,7 @@ const Skills = ({modOscuro}) =>{
             target="_blank" 
             rel="noopener noreferrer"
             title='Ver más sobre Bootstrap' 
-            className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
+            className={`p-4 hover:outline-2 rounded-2xl outline-green-200 ${skillsClasShadow}`}>
             <BootstrapOriginal  
             className="transition-transform duration-300 hover:scale-110" 
             size='100' />
@@ -245,7 +245,7 @@ const Skills = ({modOscuro}) =>{
             target="_blank" 
             rel="noopener noreferrer"
             title='Ver más sobre Tailwindcss' 
-            className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
+            className={`p-4 hover:outline-2 rounded-2xl outline-green-200 ${skillsClasShadow}`}>
             <TailwindcssOriginal  
             className="transition-transform duration-300 hover:scale-110" 
             size='100' />
@@ -259,7 +259,7 @@ const Skills = ({modOscuro}) =>{
              target="_blank" 
              rel="noopener noreferrer"
              title='Ver más sobre Microsoft SQL Server' 
-             className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
+             className={`p-4 hover:outline-2 rounded-2xl outline-green-200 ${skillsClasShadow}`}>
             <MicrosoftsqlserverOriginal  
             className="transition-transform duration-300 hover:scale-110" 
             size='100' />
@@ -274,7 +274,7 @@ const Skills = ({modOscuro}) =>{
              target="_blank" 
              rel="noopener noreferrer"
              title='Ver más sobre Mysql' 
-             className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
+             className={`p-4 hover:outline-2 rounded-2xl outline-green-200 ${skillsClasShadow}`}>
             <MysqlOriginalWordmark  
             className="transition-transform duration-300 hover:scale-110" 
             size='100' />
@@ -289,7 +289,7 @@ const Skills = ({modOscuro}) =>{
              target="_blank" 
              rel="noopener noreferrer"
              title='Ver más sobre MariaDB'
-             className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
+             className={`p-4 hover:outline-2 rounded-2xl outline-green-200 ${skillsClasShadow}`}>
             <MariadbOriginalWordmark  
             className="transition-transform duration-300 hover:scale-110" 
             size='100' />
@@ -303,7 +303,7 @@ const Skills = ({modOscuro}) =>{
              target="_blank" 
              rel="noopener noreferrer"
              title='Ver más sobre MongoDB' 
-             className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
+             className={`p-4 hover:outline-2 rounded-2xl outline-green-200 ${skillsClasShadow}`}>
             <MongodbOriginal  
             className="transition-transform duration-300 hover:scale-110" 
             size='100' />
@@ -317,7 +317,7 @@ const Skills = ({modOscuro}) =>{
             target="_blank" 
             rel="noopener noreferrer"
             title='Ver más sobre Apache' 
-            className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
+            className={`p-4 hover:outline-2 rounded-2xl outline-green-200 ${skillsClasShadow}`}>
             <ApacheOriginalWordmark  
             className="transition-transform duration-300 hover:scale-110" 
             size='100' />
@@ -333,7 +333,7 @@ const Skills = ({modOscuro}) =>{
             target="_blank" 
             rel="noopener noreferrer"
             title='Ver más sobre Docker' 
-            className={`p-4 hover:hover:border-2 rounded-2xl border-green-200 ${skillsClasShadow}`}>
+            className={`p-4 hover:outline-2 rounded-2xl outline-green-200 ${skillsClasShadow}`}>
             <DockerOriginal  
             className="transition-transform duration-300 hover:scale-110" 
             size='100' />
