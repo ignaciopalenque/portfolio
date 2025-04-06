@@ -10,7 +10,7 @@ const Education = ({modOscuro}) => {
     const SectionStyled = styled.section`
     @media (max-width: 640px) {
         max-width: calc(100% - 10px);
-        margin: 0 auto;
+        margin: 0 1px;
     }
     `
     return (
@@ -21,7 +21,9 @@ const Education = ({modOscuro}) => {
         lg:max-w-4xl 
         md:max-w-3xl
         sm:max-w-2xl
-        scroll-mt-24
+        lg:scroll-mt-24
+        md:scroll-mt-60
+        sm:scroll-mt-80
         rounded-2xl p-4 ${educationClass}`}>
              
             <h1 className="font-extrabold lg:text-3xl text-xl text-center self-center">Formación {maleStudentEmoji}</h1>

@@ -10,7 +10,8 @@ const AboutMe = ({modOscuro}) => {
   const SectionStyled = styled.section`
   @media (max-width: 640px) {
     max-width: calc(100% - 10px);
-    margin: 0 auto;
+    margin: 0 1px;
+
   }
   `
 
@@ -23,7 +24,9 @@ const AboutMe = ({modOscuro}) => {
       lg:max-w-4xl 
       md:max-w-3xl
       sm:max-w-2xl
-      scroll-mt-24
+      lg:scroll-mt-24
+      md:scroll-mt-60
+      sm:scroll-mt-80
       rounded-2xl p-4 ${aboutMeClass}`}>
       <h1 className="font-extrabold lg:text-3xl text-xl">Sobre mí {maleWavingEmoji}</h1>
       <section className="flex lg:flex-row flex-col items-center justify-center gap-4">
