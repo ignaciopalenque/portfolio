@@ -115,7 +115,7 @@ const Navbar =({cambiarTema, modOscuro, abrirCurriculum})=>{
          transition-transform duration-300 hover:scale-110 '>
          Proyectos
          </span>
-         <span className=' hover:text-green-200 '>
+         <span  className=' hover:text-green-200 ' title='Doble click para ver curriculum' >
             <button  onClick={abrirCurriculum} className=' hover:underline
                 transition-transform duration-300 hover:scale-110'>
                         Curriculum
