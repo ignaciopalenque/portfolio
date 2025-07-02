@@ -6,17 +6,42 @@ import AboutMe from './components/Cards/AboutMe';
 import Experience from './components/Cards/Experience';
 import Skills from './components/Cards/Skills';
 import Education from './components/Cards/Education';
+import curriculum  from './assets/img/curriculum.png'
+import curriculumPDF  from './assets/pdf/curriculum-ignacio-2025.pdf'
+
 function App() {
 
   //useState true por defecto sera modo oscuro
-  const [modOscuro, setModOscuro] = useState(true)
-  
+  const [modOscuro, setModOscuro] = useState(true);
+  const [abrirCurriculum, setAbrirCurriculum] = useState(false);
+  const dialogo = document.getElementById("dialogoCurriculum");
+
   const cambiarTema = () => {
     console.log('Estado actual:', modOscuro); // Verifica el estado antes de cambiarlo
     setModOscuro(!modOscuro)
     console.log('Nuevo estado:', !modOscuro); // Verifica el nuevo estado
 
   }
+  const abrirDialogoCurriculum = () => {
+    setAbrirCurriculum(!abrirCurriculum);
+
+    if(abrirCurriculum){
+      dialogo.showModal();
+    }else{
+      dialogo.close();
+    } 
+
+  }
+
+  function descargarPDF() {
+  const enlace = document.createElement("a");
+  console.log("Descargando PDF...");
+  enlace.href = curriculumPDF;
+  enlace.download = "curriculum-ignacio-palenque.pdf"; // Nombre con el que se descargará
+  document.body.appendChild(enlace);
+  enlace.click();
+  document.body.removeChild(enlace);
+}
 
 
 
@@ -30,9 +55,41 @@ function App() {
       bg-center bg-cover`}>
 
     <header>
-      <Navbar cambiarTema={cambiarTema} modOscuro={modOscuro}/>
+      <Navbar cambiarTema={cambiarTema} modOscuro={modOscuro}  abrirCurriculum={abrirDialogoCurriculum}/>
       <Title modOscuro={modOscuro}/>
     </header>
+
+    <section>
+      <dialog id="dialogoCurriculum" className='mx-auto size-lvh
+       mt-24 mb-24 border-2 border-green-200 shadow-[0_0_10px_2px_rgba(0,0,0,0.3)] '>
+        <section className='flex flex-wrap flex-row items-center justify-center text-center border-2 border-gray-300 '>
+        <form method="dialog">
+          <section className='flex m-2 flex-row items-center justify-center gap-1 font-semibold'>
+            <button onClick={descargarPDF}
+            className='w-auto p-0.5 flex flex-row justify-center items-center border-2 
+             bg-green-500
+             hover:bg-green-400
+             hover:text-white
+             hover:outline-2
+             hover:outline-black'>Descargar en PDF</button>
+            <button value="no" 
+            className='w-auto p-0.5 flex flex-row justify-center items-center border-2 
+            bg-red-400
+            hover:bg-red-500
+            hover:text-white
+            hover:outline-2
+            hover:outline-black'>
+            Cerrar Curriculum</button>
+          </section>
+       
+        </form>
+          <img width={"100%"} height={"auto"}  src={curriculum} alt="" />
+
+        </section>
+ 
+      </dialog> 
+    </section>
+
 
     <section>
       <AboutMe modOscuro={modOscuro}/>

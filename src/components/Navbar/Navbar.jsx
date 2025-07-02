@@ -10,7 +10,7 @@ import styled from 'styled-components'
 
 
 
-const Navbar =({cambiarTema, modOscuro})=>{
+const Navbar =({cambiarTema, modOscuro, abrirCurriculum})=>{
 
     let navbarClass = modOscuro ? ' bg-gray-800 border-b-2  border-amber-50   text-amber-50' : 'bg-amber-50 border-b-2   border-b-black text-gray-800'
     let btnModeClass = modOscuro ? ' border-amber-50 bg-yellow-800' : 'border-black-50'
@@ -115,13 +115,14 @@ const Navbar =({cambiarTema, modOscuro})=>{
          transition-transform duration-300 hover:scale-110 '>
          Proyectos
          </span>
-       
-        <span  className='
-      hover:text-green-200 
-        hover:underline
-        transition-transform duration-300 hover:scale-110 '>
-        Curriculum
-        </span>
+         <span className=' hover:text-green-200 '>
+            <button  onClick={abrirCurriculum} className=' hover:underline
+                transition-transform duration-300 hover:scale-110'>
+                        Curriculum
+            </button>
+         </span>
+
+    
 
         <a href='https://www.linkedin.com/in/ignacio-palenque-tronco-30a1aa206/' 
         target="_blank" 
