@@ -1,13 +1,14 @@
 import React from 'react';
-import { Check }  from  'iconoir-react' 
-import { PlusSquare }  from  'iconoir-react' 
 import styled from 'styled-components'
 
 const Experience = ({modOscuro}) => {
 
   let experienceClass = modOscuro ? ' text-amber-50 border-2 font-bold border-green-200 shadow-[0_0_10px_2px_rgba(255,255,255,0.5)] bg-gray-800' : ' text-black-50 border-2 font-bold border-green-200 shadow-[0_0_10px_2px_rgba(0,0,0,0.3)] bg-amber-50'
-    const programmerEmoji = '\u{1F468}\u200D\u{1F4BB}'; // Hombre programador
-  
+  const programmerEmoji = '\u{1F468}\u200D\u{1F4BB}'; // Hombre programador
+  const checkEmoji = '\u2705';
+  const plusEmoji = '\u2795';
+  let experienceClasShadow = modOscuro ? 'hover:shadow-[0_0_10px_2px_rgba(255,255,255,0.5)]' : 'hover:shadow-[0_0_10px_2px_rgba(0,0,0,0.3)]'
+
   const SectionStyled = styled.section`
   @media (max-width: 640px) {
     max-width: calc(100% - 10px);
@@ -45,8 +46,8 @@ const Experience = ({modOscuro}) => {
 
         <section className='self-start' id='infofive'>
           
-          <button className=" hover:bg-emerald-300" onClick={() => mostarOcultar('infofive')}>
-            <PlusSquare />
+          <button className={`hover:bg-amber-50 hover:outline-1  outline-green-200 ${experienceClasShadow}`} onClick={() => mostarOcultar('infofive')}>
+            {plusEmoji}
           </button>
           <span className="font-light p-1">Desempeñando las siguientes tareas entre otras :</span>
 
@@ -54,13 +55,13 @@ const Experience = ({modOscuro}) => {
            
           <ul className="self-center" hidden>
             <li className="font-light flex items-center gap-2">
-              <Check /> Desarrollo y mantenimiento de aplicaciones en .NET con visual basic , C# , Blazor, LINQ, Entity Framework y Bootstrap.
+              {checkEmoji}Desarrollo y mantenimiento de aplicaciones en .NET con visual basic , C# , Blazor, LINQ, Entity Framework y Bootstrap.
             </li>
             <li className="font-light flex items-center gap-2">
-              <Check /> Gestión y mantenimiento de bases de datos SQL Server. uso de vistas, procedimientos almacenados y funciones
+              {checkEmoji}Gestión y mantenimiento de bases de datos SQL Server. uso de vistas, procedimientos almacenados y funciones
             </li>
             <li className="font-light flex items-center gap-2">
-              <Check /> Desarrollo de informes tanto con crystal reports como para análisis de datos con conexiones excel obdc
+             {checkEmoji}Desarrollo de informes tanto con crystal reports como para análisis de datos con conexiones excel obdc
             </li>
         
           </ul>
