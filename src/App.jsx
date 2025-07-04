@@ -35,15 +35,18 @@ function App() {
 
   }
 
-  function descargarPDF() {
-  const enlace = document.createElement("a");
-  console.log("Descargando PDF...");
-  enlace.href = curriculumPDF;
-  enlace.download = "curriculum-ignacio-palenque.pdf"; // Nombre con el que se descargará
-  document.body.appendChild(enlace);
-  enlace.click();
-  document.body.removeChild(enlace);
-}
+  const descargarPDF = () => {
+
+    const enlace = document.createElement("a");
+    console.log("Descargando PDF...");
+    enlace.href = curriculumPDF;
+    enlace.download = "curriculum-ignacio-palenque.pdf"; // Nombre con el que se descargará
+    document.body.appendChild(enlace);
+    enlace.click();
+    document.body.removeChild(enlace);
+    
+  }
+ 
 
 
 

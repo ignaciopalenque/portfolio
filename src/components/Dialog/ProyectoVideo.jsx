@@ -9,10 +9,10 @@ let videoActivo = '';
 
  switch (videoProyecto) {
         case 'emplearavel':
-            videoActivo = 'video/landing-video.mp4';
+            videoActivo = 'video/emplearavel-compressx2ca.mp4';
             break;
         default:
-            videoActivo = 'video/landing-video.mp4';
+            videoActivo = 'video/default.mp4';
             break;
     }
 

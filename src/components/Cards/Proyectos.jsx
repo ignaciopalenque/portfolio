@@ -1,7 +1,7 @@
-import { useRef } from 'react';
-import { useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import styled from 'styled-components';
 import ProyectoVideo from '../Dialog/ProyectoVideo';
+import { Github }  from  'iconoir-react'  
 
 const Proyectos = ({modOscuro}) => {
 
@@ -14,13 +14,35 @@ const dialogRef = useRef(null);
 const [videoProyectoSeleccionado, setVideoProyectoSeleccionado] = useState('');
 let proyectosClasShadow = modOscuro ? 'hover:shadow-[0_0_10px_2px_rgba(255,255,255,0.5)]' : 'hover:shadow-[0_0_10px_2px_rgba(0,0,0,0.3)]'
 
-function verVideoProyecto(video){
 
-  setVideoProyectoSeleccionado(video); // actualiza el estado correctamente
-  dialogRef.current.showModal();
 
-}
+useEffect(() => {
+  if (videoProyectoSeleccionado && dialogRef.current) {
+    dialogRef.current.showModal();
+  }
+}, [videoProyectoSeleccionado]);
 
+  const verVideoProyecto = (video) => {
+    setVideoProyectoSeleccionado(video); // actualiza el estado correctamente
+
+  }
+
+    const pararVideos = () => {
+    const videos = document.querySelectorAll('video');
+    videos.forEach((video) => {
+      video.pause();
+      video.currentTime = 0;
+      setVideoProyectoSeleccionado('');
+    });
+  };
+
+  const cerrarDialog = () => {
+  if (dialogRef.current) {
+    dialogRef.current.close(); // cierra el dialog manualmente
+  }
+  pararVideos(); // pausa y reinicia el video
+  setVideoProyectoSeleccionado(''); // resetea el estado para permitir nuevo click
+};
   
   const SectionStyled = styled.section`
   @media (max-width: 640px) {
@@ -29,13 +51,14 @@ function verVideoProyecto(video){
   }
   `
 
-
-
-  function mostarOcultar(id){
+ const mostarOcultar = (id) => {
     const padre = document.getElementById(id); // Obtiene el padre del botón
     const ul = padre.querySelector('ul'); // Busca el <ul> dentro del padre
     ul.hidden = !ul.hidden; // Alterna la visibilidad del <ul>
+  
   }
+
+
 
     return (
       <SectionStyled>
@@ -59,34 +82,34 @@ function verVideoProyecto(video){
 
         <section className='self-start' id='emplearavel'>
           
-          <button className={`hover:bg-amber-50 hover:outline-1  outline-green-200 ${proyectosClasShadow}`} onClick={() => mostarOcultar('emplearavel')}>
+          <button title="Mostrar detalles" className={`hover:bg-amber-50 hover:outline-1  outline-green-200 ${proyectosClasShadow}`} onClick={() => mostarOcultar('emplearavel')}>
             {plusEmoji}
           </button>
-          <span className="font-light p-1">Funcionalidades del proyecto :</span>
+          <span className="font-light underline p-1">Funcionalidades del proyecto :</span>
 
 
            
           <ul className="self-center" hidden>
-            <li className="font-light flex items-center gap-2">
+            <li className="m-2 font-light flex items-center gap-2">
               {checkEmoji} Autentificación de usuarios y sistema de roles y permisos.
             </li>
-            <li className="font-light flex items-center gap-2">
+            <li className="m-2 font-light flex items-center gap-2">
              {checkEmoji} Gestión de empleados y centros productivos
             </li>
-            <li className="font-light flex items-center gap-2">
+            <li className="m-2 font-light flex items-center gap-2">
              {checkEmoji} Gestión de fichajes de empleados
             </li>
 
-               <li className="font-light flex items-center gap-2">
+               <li className="m-2 font-light flex items-center gap-2">
              {checkEmoji} Gestión de proyectos
             </li>
 
-            <li className="font-light flex items-center gap-2">
-             {checkEmoji}Gestión de notificaciones
+            <li className="m-2 font-light flex items-center gap-2">
+             {checkEmoji} Gestión de notificaciones
             </li>
 
-                 <li className="font-light flex items-center gap-2">
-            {checkEmoji}Gestión de intranet documental
+                 <li className="m-2 font-light flex items-center gap-2">
+            {checkEmoji} Gestión de intranet documental
             </li>
         
                   <button className={` mt-2 p-1 hover:text-red-500 hover:outline-1  outline-green-200 ${proyectosClasShadow}`} onClick={() => verVideoProyecto('emplearavel')}>{playIcon} ver video proyecto</button>
@@ -99,7 +122,14 @@ function verVideoProyecto(video){
          
   
           {/* Fecha final alineada al final */}
-          <strong className="self-start">repositorio del proyecto</strong>
+          <section className='flex flex-row gap-2 font-bold text-red-600  hover:text-green-200 hover:underline'>
+            
+            <Github/>
+           <a className="self-start " 
+          href='https://github.com/nachopalenque/EmpleAravel' target="_blank">repositorio del proyecto </a>
+
+          </section>
+      
         </article>
 
 
@@ -130,11 +160,11 @@ function verVideoProyecto(video){
 
 
         <section>
-            <dialog ref={dialogRef} className='mx-auto size-lvh bg-transparent mt-24 mb-24  '>
+            <dialog id="proyectoVideo" ref={dialogRef} className='mx-auto size-lvh bg-transparent mt-24 mb-24  '>
                 <form method="dialog">
                     <section className='flex m-2 flex-row items-center justify-center gap-1 font-semibold'>
                 
-                    <button value="no" class="text-xl w-50 h-8 rounded border-1
+                    <button onClick={cerrarDialog} value="no" class="text-xl w-50 h-8 rounded border-1
                         border-black
                         bg-red-500 text-white relative overflow-hidden group z-10
                         hover:text-white duration-1000">

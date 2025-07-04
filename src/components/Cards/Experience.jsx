@@ -46,22 +46,25 @@ const Experience = ({modOscuro}) => {
 
         <section className='self-start' id='infofive'>
           
-          <button className={`hover:bg-amber-50 hover:outline-1  outline-green-200 ${experienceClasShadow}`} onClick={() => mostarOcultar('infofive')}>
+          <button title="Mostrar detalles"  className={`hover:bg-amber-50 hover:outline-1  outline-green-200 ${experienceClasShadow}`} onClick={() => mostarOcultar('infofive')}>
             {plusEmoji}
           </button>
-          <span className="font-light p-1">Desempeñando las siguientes tareas entre otras :</span>
+          <span className="font-light p-1 underline">Desempeñando las siguientes tareas entre otras :</span>
 
 
            
           <ul className="self-center" hidden>
-            <li className="font-light flex items-center gap-2">
-              {checkEmoji}Desarrollo y mantenimiento de aplicaciones en .NET con visual basic , C# , Blazor, LINQ, Entity Framework y Bootstrap.
+            <li className="m-2 font-light flex items-center gap-2">
+              {checkEmoji} Desarrollo y mantenimiento de aplicaciones en .NET con visual basic , C# , Blazor, LINQ, Entity Framework y Bootstrap.
             </li>
-            <li className="font-light flex items-center gap-2">
-              {checkEmoji}Gestión y mantenimiento de bases de datos SQL Server. uso de vistas, procedimientos almacenados y funciones
+               <li className="m-2 font-light flex items-center gap-2">
+              {checkEmoji} Desarrollo y mantenimiento de aplicaciones en PHP con Laravel y Bootstrap.
             </li>
-            <li className="font-light flex items-center gap-2">
-             {checkEmoji}Desarrollo de informes tanto con crystal reports como para análisis de datos con conexiones excel obdc
+            <li className="m-2 font-light flex items-center gap-2">
+              {checkEmoji} Gestión y mantenimiento de bases de datos SQL Server y Mysql. Uso de vistas, procedimientos almacenados y funciones
+            </li>
+            <li className="m-2 font-light flex items-center gap-2">
+             {checkEmoji} Desarrollo de informes tanto con crystal reports como para análisis de datos con conexiones excel obdc
             </li>
         
           </ul>
