@@ -293,9 +293,15 @@ const Skills = ({modOscuro}) =>{
              rel="noopener noreferrer"
              title='Ver más sobre MariaDB'
              className={`p-4 hover:outline-2 rounded-2xl outline-green-200 ${skillsClasShadow}`}>
-            <MariadbOriginalWordmark  
-            className="transition-transform duration-300 hover:scale-110" 
-            size='100' />
+              {modOscuro ? (
+              <img
+                src="https://mariadb.com/wp-content/uploads/2019/11/mariadb-logo-vert_white-transparent.png"
+                alt="MariaDB"
+                style={{ height: '100px' }}
+              />
+            ) : (
+              <MariadbOriginalWordmark size="100" />
+            )}
             </a>
             </article>
 

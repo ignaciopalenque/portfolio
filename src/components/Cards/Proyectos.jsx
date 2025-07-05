@@ -2,6 +2,14 @@ import { useRef, useState, useEffect } from 'react';
 import styled from 'styled-components';
 import ProyectoVideo from '../Dialog/ProyectoVideo';
 import { Github }  from  'iconoir-react'  
+import LaravelOriginalWordmark from 'devicons-react/lib/icons/LaravelOriginalWordmark';
+import MariadbOriginalWordmark from 'devicons-react/lib/icons/MariadbOriginalWordmark';
+import PhpOriginal from 'devicons-react/lib/icons/PhpOriginal';
+import BootstrapOriginal from 'devicons-react/lib/icons/BootstrapOriginal';
+import Html5Original from 'devicons-react/lib/icons/Html5Original';
+import Css3Original from 'devicons-react/lib/icons/Css3Original';
+import JavascriptOriginal from 'devicons-react/lib/icons/JavascriptOriginal';
+
 
 const Proyectos = ({modOscuro}) => {
 
@@ -78,7 +86,23 @@ useEffect(() => {
           <span className="font-semibold lg:text-2xl text-xl underline self-start">Emple@Ravel - Portal del empleado desarrollado en Laravel 10 </span>
           
           {/* Fechas alineadas al final */}
-      <strong className="self-start">Portal del empleado desarrollado en Laravel 10 + MariaDB + AdminLTE + Bootstrap + JetStream + Spatie Laravel Permission</strong>
+        <section className="flex col justify-center aling-items-center gap-5 self-start" >
+          <PhpOriginal  size='75'/>
+          <LaravelOriginalWordmark size='75'/>
+            {modOscuro ? (
+              <img
+                src="https://mariadb.com/wp-content/uploads/2019/11/mariadb-logo-vert_white-transparent.png"
+                alt="MariaDB"
+                style={{ height: '48px' }}
+              />
+            ) : (
+              <MariadbOriginalWordmark size="50" />
+            )}
+          <JavascriptOriginal size='50'/>
+          <BootstrapOriginal size='50'/>
+          <Css3Original size='50'/>
+          <Html5Original size='50'/>
+          </section>
 
         <section className='self-start' id='emplearavel'>
           
