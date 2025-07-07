@@ -297,10 +297,11 @@ const Skills = ({modOscuro}) =>{
               <img
                 src="https://mariadb.com/wp-content/uploads/2019/11/mariadb-logo-vert_white-transparent.png"
                 alt="MariaDB"
-                style={{ height: '100px' }}
+                className="size-24 transition-transform duration-300 hover:scale-110" 
+ 
               />
             ) : (
-              <MariadbOriginalWordmark size="100" />
+              <MariadbOriginalWordmark size="100"  className="transition-transform duration-300 hover:scale-110" />
             )}
             </a>
             </article>
