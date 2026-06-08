@@ -48,7 +48,7 @@ const Title = ({modOscuro}) => {
   sm:text-4xl
   font-extrabold 
   bg-gradient-to-b from-blue-500 to-green-500 
-  bg-clip-text text-transparent " style={{ fontFamily: 'Gochi Hand, monospace, sans-serif',  fontSize: 'clamp(4rem, 6vw, 8rem)'}}>FullStacks! </h1>
+  bg-clip-text text-transparent " style={{ fontFamily: 'Gochi Hand, monospace, sans-serif',  fontSize: 'clamp(4rem, 6vw, 8rem)'}}> | Blue Team Security! </h1>
   <img src={titleImg} width="100px"  alt="Icono de avatar programador" />
   </section>
 

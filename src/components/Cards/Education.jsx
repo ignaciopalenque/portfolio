@@ -99,7 +99,22 @@ const Education = ({modOscuro}) => {
                         <section className='flex-grow' >
                         <h1 className="font-semibold text-2xl">CFGS Desarrollo de Aplicaciones Web</h1>
                         <span className="font-light">I.E.S Juan Bosco en Alcázar de San Juan</span><br />
-                        <span className="font-light">Desde 2024 hasta la Actualidad</span>
+                        <span className="font-light">Desde 2024 hasta 2025</span>
+                        </section>
+
+            </article> 
+
+                        <article className='flex flex-row items-center justify-center gap-8'>
+
+                        <section>
+                        <FontAwesomeIcon icon={faGraduationCap} className={`text-2xl border-2 border-green-200 rounded-e-full p-1.5 ${iconClass}`} />
+                        <figure className="w-px h-20 bg-gray-300"></figure>
+                        </section>
+                        <section className='flex-grow' >
+                        <h1 className="font-semibold text-2xl">Curso de Especialización - Ciberseguridad en Entornos de las Tecnologías de la Información
+                        </h1>
+                        <span className="font-light">I.E.S Juan Bosco en Alcázar de San Juan</span><br />
+                        <span className="font-light">Desde 2025 hasta 2026</span>
                         </section>
 
             </article> 
