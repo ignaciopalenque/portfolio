@@ -33,7 +33,14 @@ const AboutMe = ({modOscuro}) => {
         <img className={`border-2 object-cover ${imgClass}`} src={me} width="200px" alt="" />
         <section className="flex flex-col items-center justify-center text-justify hyphens-auto leading-relaxed gap-4">
         <p>
-        Hola a todos, soy José Ignacio Palenque, tengo actualmente 32 años y soy desarrollador de software con casi cinco años de experiencia laboral en el mundo del desarrollo multiplataforma y más especificamente para la plataforma .net <a className="text-red-600  hover:text-green-200" href="https://dotnet.microsoft.com/es-es/learn/dotnet/what-is-dotnet" target='_blank'> saber mas...</a> 
+        Hola a todos, soy José Ignacio Palenque, tengo actualmente 33 años y soy desarrollador de software con casi cinco años de experiencia laboral en el mundo del desarrollo multiplataforma y más especificamente para la plataforma .net <a className="text-red-600  hover:text-green-200" href="https://dotnet.microsoft.com/es-es/learn/dotnet/what-is-dotnet" target='_blank'> saber mas...</a> <br></br>
+        Recientemente también he cursado y completado con éxito la especialización de Ciberseguridad en Entornos de las Tecnologías de la Información donde principalmente he trabajado con tecnologias y herramientas como 
+        <a className="text-red-600  hover:text-green-200" href="https://www.pfsense.org/" target='_blank'> pfSense </a>, 
+        <a className="text-red-600  hover:text-green-200" href="https://suricata.io/" target='_blank'> Suricata </a>, 
+        <a className="text-red-600  hover:text-green-200" href="https://www.wazuh.com/" target='_blank'> Wazuh </a>,
+        <a className="text-red-600  hover:text-green-200" href="https://www.elastic.co/es/elastic-stack" target='_blank'> Elastic Stack </a>,
+        <a className="text-red-600  hover:text-green-200" href="https://www.cloudflare.com/es-es/learning/security/threats/owasp-top-10/" target='_blank'> OWASP... </a> Aplicándolos en entornos de detección y respuesta (Blue Team).
+
         </p>
         <p>
         Nacido y con residencia en España, concretamente en Pedro Muñoz, un localidad de Ciudad Real.

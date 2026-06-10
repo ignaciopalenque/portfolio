@@ -16,6 +16,14 @@ import MysqlOriginalWordmark from 'devicons-react/lib/icons/MysqlOriginalWordmar
 import MariadbOriginalWordmark from 'devicons-react/lib/icons/MariadbOriginalWordmark';
 import ApacheOriginalWordmark from 'devicons-react/lib/icons/ApacheOriginalWordmark';
 import DockerOriginal from 'devicons-react/lib/icons/DockerOriginal';
+import PfsenseOriginalWordmark from 'devicons-react/lib/icons/PfsenseOriginalWordmark';
+
+import {SiKalilinux, SiOwasp, SiMetasploit } from "react-icons/si"; // Simple Icons
+import { SiElasticstack } from "react-icons/si";  // ✅ Este SÍ existe
+import { SiBurpsuite } from "react-icons/si";
+
+
+
 import MongodbOriginal from 'devicons-react/lib/icons/MongodbOriginal';
 import ReactOriginal from 'devicons-react/lib/icons/ReactOriginal';
 import styled from 'styled-components'
@@ -350,6 +358,110 @@ const Skills = ({modOscuro}) =>{
             </a>
             </article>
 
+
+            <article 
+            className="flex flex-col gap-4 w-40 p-1 justify-center items-center  hover:text-green-200">
+            <span>Kali Linux</span>
+            <a
+            href = 'https://es.wikipedia.org/wiki/Kali_Linux' 
+            target="_blank" 
+            rel="noopener noreferrer"
+            title='Ver más sobre Kali Linux' 
+            className={`p-4 hover:outline-2 rounded-2xl outline-green-200 ${skillsClasShadow}`}>
+            <SiKalilinux  
+            className="transition-transform duration-300 hover:scale-110" 
+            size='100' />
+            </a>
+            </article>
+
+
+
+            <article 
+            className="flex flex-col gap-4 w-40 p-1 justify-center items-center  hover:text-green-200">
+            <span>PfSense</span>
+            <a
+            href = 'https://es.wikipedia.org/wiki/PfSense' 
+            target="_blank" 
+            rel="noopener noreferrer"
+            title='Ver más sobre PfSense' 
+            className={`p-4 hover:outline-2 rounded-2xl outline-green-200 ${skillsClasShadow}`}>
+            <PfsenseOriginalWordmark  
+            className="transition-transform duration-300 hover:scale-110" 
+            size='100' />
+            </a>
+            </article>
+
+            <article 
+            className="flex flex-col gap-4 w-40 p-1 justify-center items-center  hover:text-green-200">
+            <span>OWASP</span>
+            <a
+            href = 'https://es.wikipedia.org/wiki/Open_Web_Application_Security_Project' 
+            target="_blank" 
+            rel="noopener noreferrer"
+            title='Ver más sobre OWASP' 
+            className={`p-4 hover:outline-2 rounded-2xl outline-green-200 ${skillsClasShadow}`}>
+            <SiOwasp  
+            className="transition-transform duration-300 hover:scale-110" 
+            size='100' />
+            </a>
+            </article>
+            
+      
+
+            <article 
+            className="flex flex-col gap-4 w-40 p-1 justify-center items-center  hover:text-green-200">
+            <span>Metasploit</span>
+            <a
+            href = 'https://es.wikipedia.org/wiki/Metasploit' 
+            target="_blank" 
+            rel="noopener noreferrer"
+            title='Ver más sobre Metasploit' 
+            className={`p-4 hover:outline-2 rounded-2xl outline-green-200 ${skillsClasShadow}`}>
+            <SiMetasploit  
+            className="transition-transform duration-300 hover:scale-110" 
+            size='100' />
+            </a>
+            </article>
+
+                  
+
+            <article 
+            className="flex flex-col gap-4 w-40 p-1 justify-center items-center  hover:text-green-200">
+            <span>Elastic Stack</span>
+            <a
+            href = 'https://en.wikipedia.org/wiki/Elasticsearch' 
+            target="_blank" 
+            rel="noopener noreferrer"
+            title='Ver más sobre Elastic Stack' 
+            className={`p-4 hover:outline-2 rounded-2xl outline-green-200 ${skillsClasShadow}`}>
+            <SiElasticstack  
+            className="transition-transform duration-300 hover:scale-110" 
+            size='100' />
+            </a>
+            </article>
+
+
+            <article 
+            className="flex flex-col gap-4 w-40 p-1 justify-center items-center  hover:text-green-200">
+            <span>Burpsuite</span>
+            <a
+            href = 'https://wiki.archlinux.org/title/Burp_suite_(Espa%C3%B1ol)' 
+            target="_blank" 
+            rel="noopener noreferrer"
+            title='Ver más sobre Burpsuite' 
+            className={`p-4 hover:outline-2 rounded-2xl outline-green-200 ${skillsClasShadow}`}>
+            <SiBurpsuite  
+            className="transition-transform duration-300 hover:scale-110" 
+            size='100' />
+            </a>
+            </article>
+
+            
+
+
+
+
+      
       
         </section>
      
